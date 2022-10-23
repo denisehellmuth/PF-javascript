@@ -1,0 +1,16 @@
+.notificacion-canasto{
+    position: absolute;
+    top: 20px;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
+
+a.btn-modal{
+    display: flex;
+    position: relative;
+}

@@ -1,0 +1,142 @@
+[
+    {
+        "nombre": "Aceite de Coco Virgen Chia 360ml",
+        "precio": 1630,
+        "id": 1,
+        "img" : "./multimedia/Aceite Coco Virgen Chia Graal 360 ml.jpg",
+        "categoria" : 1 
+    },
+    {
+        "nombre": "Aceite de oliva AOVE Terranova1 l",
+        "precio": 1700,
+        "id": 2,  
+        "img" : "./multimedia/AOVE Terranova 1 l.jpg",
+        "categoria" : 1
+    },
+    {
+        "nombre": "Azucar Mascabo Balaju 500gr",
+        "precio": 320,
+        "id": 3,
+        "img" : "./multimedia/Azucar Mascabo Balaju 500 g.jpg",  
+        "categoria" : 2
+    },
+    {
+        "nombre": "Azucar rubia Dicomere 1kg",
+        "precio": 470,
+        "id": 4 ,
+        "img" : "./multimedia/Azucar rubia Dicomere 1 kg.jpg", 
+        "categoria" : 2
+    },
+    {
+        "nombre": "Champignones 3 Pimientas",
+        "precio": 690,
+        "id": 5 ,
+        "img" : "./multimedia/Champi 3 Pimientas.jpg" ,  
+        "categoria" : 1
+    },
+    {
+        "nombre": "Fideos de Maiz, Capia y Quinoa 400gr",
+        "precio": 430,
+        "id": 6 ,
+        "img" : "./multimedia/Fideos Maiz Capia y Qu°noa.jpg",   
+        "categoria" : 4
+    },
+    {
+        "nombre": "Fideos de Maiz Morado 300gr",
+        "precio": 430,
+        "id": 7 ,
+        "img" : "./multimedia/Fideos Maiz Morado 300 g.jpg",   
+        "categoria" : 4
+    },
+    {
+        "nombre": "Granola Kuati 400gr",
+        "precio": 610,
+        "id": 8 ,
+        "img" : "./multimedia/Granola Kuati 400 g.jpg",  
+        "categoria" : 3
+    },
+    {
+        "nombre": "Harina 000 organica Fincas El Paraiso 500gr",
+        "precio": 370,
+        "id": 9 ,
+        "img" : "./multimedia/Harina integral org†nica Fincas El Paraiso.jpg", 
+        "categoria" : 4
+    },
+    {
+        "nombre": "Harina de Garbanzo Dicomere 750gr",
+        "precio": 230,
+        "id": 10,
+        "img" : "./multimedia/Harina de Garbanzo Dicomere 750 g.jpg",
+        "categoria" : 4
+    },
+    {
+        "nombre": "Yerba Kalena despalada 500gr",
+        "precio": 720,
+        "id": 11,
+        "img" : "./multimedia/Kalena despalada 500.jpg",
+        "categoria" : 2
+    },
+    {
+        "nombre": "Yerba Tucangua 1kg",
+        "precio": 1300,
+        "id": 12,
+        "img" : "./multimedia/Yerba Tucangua 1 kg.jpg",
+        "categoria" :2 
+    },
+    {
+        "nombre": "Miel Cremosa 500gr",
+        "precio": 620,
+        "id": 13,
+        "img" : "./multimedia/Miel Cremosa.jpg",
+        "categoria" : 2
+    },
+    {
+        "nombre": "Miel Liquida 500gr",
+        "precio": 620,
+        "id": 14,
+        "img" : "./multimedia/Miel L°quida.jpg",
+        "categoria" : 2
+    },
+    {
+        "nombre": "Barra de cereal Muecas Cacao avellanas 45gr",
+        "precio": 140,
+        "id": 15,
+        "img" : "./multimedia/Muecas Cacao avellanas 45 g.jpg",
+        "categoria" : 3
+    },
+    {
+        "nombre": "Barra de cerea Muecas Pasas ar†ndanos 45gr",
+        "precio": 140,
+        "id": 16,
+        "img" : "./multimedia/Muecas Pasas ar†ndanos 45 g.jpg",
+        "categoria" : 3
+    },
+    {
+        "nombre": "Polenta Del campo 500gr",
+        "precio": 120,
+        "id": 17,
+        "img" : "./multimedia/Polenta Del campo 500 g.jpg",
+        "categoria" : 4
+    },
+    {
+        "nombre": "Polenta organica Dicomere 450gr",
+        "precio": 160,
+        "id": 18,
+        "img" : "./multimedia/Polenta org†nica Dicomere 450 g.jpg",
+        "categoria" : 4
+    },
+    {
+        "nombre": "Almohaditas Snuks limon 240gr",
+        "precio": 430,
+        "id": 19,
+        "img" : "./multimedia/Snuks lim¢n.jpg",
+        "categoria" : 3
+    },
+    {
+        "nombre": "Leche Pampa vida Almendra 1l",
+        "precio": 380,
+        "id": 20,
+        "img" : "./multimedia/Leche Pampa vida Almendra 1 l.jpg",   
+        "categoria" : 3
+    }
+]

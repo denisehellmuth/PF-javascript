@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Agrestre</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" role="button" id="todos-los-productos">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a id="categoria-1" class="dropdown-item" href="#">Aceites y Conservas</a></li>
+                    <li><a id="categoria-2" class="dropdown-item" href="#">Yerba, Azucar y Miel</a></li>
+                    <li><a id="categoria-3" class="dropdown-item" href="#">Desayuno</a></li>
+                    <li><a id="categoria-4" class="dropdown-item" href="#">Fideos, Harinas Y Premezclas</a></li>
+                </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input id="busqueda" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <!-- Button trigger modal -->
+                <a  class="btn btn-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span class="" id="total-productos"></span>
+                    <img src="./multimedia/pngwing.com (10).png" width="55px" alt="">
+                </a>
+            </form>
+            </div>
+            </div>
+        </nav>
+    <div class="container-fluid" >
+        <div id="contenedor" class="row justify-content-between"></div> 
+    </div>
+   
+  <!-- Modal -->
+    <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">carrito</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">cantidad</th>
+                    <th scope="col">nombre</th>
+                    <th scope="col">precio</th>
+                </tr>
+                </thead>
+                <tbody id="carrito"></tbody>
+                    <tr>
+                        <td class="text-end" colspan="3">Total: <span style="margin-right: 45px;" id="total-carrito"></span></td>
+                    </tr>
+                
+                </table>
+                
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="finalizar-compra" style = 'display: none'>Finalizar Compra</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div id="formulario" class="justify-content-center"  style="display: none;">
+        <form class="row g-3 needs-validation col-8" novalidate>
+            <div class="col-md-4">
+                <label for="validationServer01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre"  required>
+                <div class="valid-feedback">
+                    Genial!
+                </div>
+                <div  class="invalid-feedback">
+                    Ingrese un nombre
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationServer02"  required>
+                <div class="valid-feedback">
+                    Genial!
+                </div>
+                <div  class="invalid-feedback">
+                    Ingrese un apellido
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServerUsername" class="form-label">Mail</label>
+                <div class="input-group has-validation">
+                <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div class="invalid-feedback">
+                    Ingrese un mail
+                </div>
+                <div class="valid-feedback">
+                    Genial!
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationServer03" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                <div class="invalid-feedback">
+                Por favor ingrese una direccion
+                </div>
+                <div class="valid-feedback">
+                    Genial!
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer04" class="form-label">Medios de pago</label>
+                <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Seleccione</option>
+                <option>mercado pago</option>
+                <option>efectivo</option>
+                <option>debito</option>
+                <option>credito</option>
+                </select>
+                <div  class="invalid-feedback">
+                Por favor seleccione un medio de pago
+                </div>
+                <div class="valid-feedback">
+                    Genial!
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer05" class="form-label">Telefono</label>
+                <input type="text" class="form-control " id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                Por favor ingrese un telefono
+                </div>
+                <div class="valid-feedback">
+                    Genial!
+                </div>
+            </div>
+            <div class="col-12 row justify-content-center">
+                <button class="col-3 mt-2 btn btn-success" type="submit" id="btn-enviar-pedido">enviar pedido</button>
+            </div>
+            </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
