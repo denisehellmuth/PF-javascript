@@ -223,9 +223,11 @@ const validateForm = () => {
                 icon: "success",
                 title: inptNombre.value,
                 text: 'Gracias por su compra!',
-            }).then(() => {
-                window.location.reload();
-                localStorage.clear();
+            }).then((res) => {
+                if (res.isConfirmed) {
+                    localStorage.clear();
+                    window.location.reload();
+                }
             })
         }
         form.classList.add('was-validated')
